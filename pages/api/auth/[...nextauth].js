@@ -24,7 +24,6 @@ export default NextAuth({
     })
   ],
   secret: "LlKq6ZtYbr+hTC073mAmAh9/h2HwMfsFo4hrfCx5mLg=",
-  NEXTAUTH_URL=https://next-login-cyan.vercel.app/,
   callbacks: {
     async jwt({ token, user, account }) {
       if (account) {
